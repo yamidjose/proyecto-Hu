@@ -1,0 +1,63 @@
+---
+import navbar from "./MenuToggle.ts";
+import Btn from "./btn.astro";
+--- 
+
+<!-- 
+  NAVBAR / CABECERA PRINCIPAL
+  ----------------------------
+  Esta barra superior aparece en todas las secciones visibles de la landing.
+  Es responsive, con un menú móvil (hamburguesa) que se despliega en pantallas pequeñas.
+  Contiene:
+  - Logo
+  - Menú de navegación
+  - Botón principal de descarga
+-->
+
+  <nav class="bg-white shadow-lg fixed top-0 left-0 w-full z-50">
+    <div class="max-w-7xl mx-auto px-0 md:px-20 py-3 flex items-center justify-between">
+      
+      <!-- LOGO -->
+<a href="/" class="flex items-center space-x-2 h-12">
+  <div class="h-64 w-auto flex items-center animate-wave3d">
+    <img src="logo.png" alt="HealthUnity logo" class="h-64 object-contain" />
+  </div>
+</a>
+
+    <!-- MENÚ DE NAVEGACIÓN (OCULTO EN MÓVIL) -->
+    <div class="hidden md:flex items-center space-x-8 text-gray-700 font-medium">
+      <a href="#inicio" class="hover:text-sky-500 transition-colors">Inicio</a>
+      <a href="#servicios" class="hover:text-sky-500 transition-colors">Servicios</a>
+      <a href="#doctores" class="hover:text-sky-500 transition-colors">Encuentra Doctor</a>
+      <a href="#como-funciona" class="hover:text-sky-500 transition-colors">Sobre Nosotros</a>
+      <a href="#contacto" class="hover:text-sky-500 transition-colors">Contáctanos</a>
+    </div>
+
+    <!-- BOTÓN DE DESCARGA -->
+<Btn
+  label="Descargar"
+  href="#"
+  class="hidden md:block"
+/>
+
+
+    <!-- BOTÓN MENÚ MÓVIL -->
+    <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- MENÚ DESPLEGABLE MÓVIL -->
+  <div id="mobile-menu" class="hidden md:hidden flex flex-col items-center bg-white border-t border-gray-200 py-4 space-y-3 text-gray-700 font-medium">
+    <a href="#inicio" class="hover:text-sky-500 transition-colors">Inicio</a>
+    <a href="#servicios" class="hover:text-sky-500 transition-colors">Servicios</a>
+    <a href="#doctores" class="hover:text-sky-500 transition-colors">Encuentra Doctor</a>
+    <a href="#como-funciona" class="hover:text-sky-500 transition-colors">Sobre Nosotros</a>
+    <a href="#contacto" class="hover:text-sky-500 transition-colors">Contáctanos</a>
+    <a href="#" class="bg-sky-500 text-white py-2 px-6 rounded-xl shadow-md hover:bg-sky-600 transition-all">Descargar</a>
+  </div>
+</nav>
+<navbar client:load />
+

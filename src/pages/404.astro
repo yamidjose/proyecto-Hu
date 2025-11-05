@@ -1,0 +1,65 @@
+---
+--- 
+
+<!-- 
+  PÁGINA 404 PERSONALIZADA PARA HEALTHUNITY
+  -----------------------------------------
+  Se muestra cuando el usuario intenta acceder a una ruta inexistente.
+  Incluye:
+  - Mensaje claro y empático.
+  - Botón para volver al inicio o descargar la app.
+  - Diseño centrado y totalmente responsive.
+-->
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página no encontrada | HealthUnity</title>
+    <meta name="description" content="Lo sentimos, la página que buscas no existe. Vuelve al inicio o descarga la app HealthUnity." />
+  </head>
+
+  <body class="bg-gray-50 text-gray-800 font-sans flex flex-col items-center justify-center min-h-screen px-6">
+    <!-- LOGO -->
+    <a href="/" class="mb-8">
+      <img src="/ruta/logo-healthunity.png" alt="Logo HealthUnity" class="h-10" />
+    </a>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <div class="text-center">
+      <h1 class="text-7xl font-bold text-sky-500 mb-4">404</h1>
+      <h2 class="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">
+        ¡Ups! Página no encontrada
+      </h2>
+      <p class="text-gray-600 max-w-md mx-auto mb-8">
+        La página que intentas visitar no existe o fue movida.  
+        Pero no te preocupes, ¡estamos aquí para cuidar de tu salud digital!
+      </p>
+
+      <!-- BOTONES DE ACCIÓN -->
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/" class="bg-sky-500 text-white font-semibold py-3 px-6 rounded-xl shadow-md hover:bg-sky-600 transition-all">
+          Volver al inicio
+        </a>
+        <a href="#" class="border border-sky-500 text-sky-500 font-semibold py-3 px-6 rounded-xl hover:bg-sky-50 transition-all">
+          Descargar App
+        </a>
+      </div>
+    </div>
+
+    <!-- IMAGEN ILUSTRATIVA -->
+    <!-- Puedes usar un vector o ilustración médica -->
+    <div class="mt-12">
+      <img 
+        src="/ruta/illustracion-404.png" 
+        alt="Ilustración médica 404" 
+        class="w-full max-w-sm mx-auto" 
+      />
+    </div>
+
+    <!-- PIE DE PÁGINA SIMPLE -->
+    <footer class="mt-12 text-sm text-gray-500 text-center">
+      <p>© 2025 HealthUnity — Tu salud, más cerca que nunca.</p>
+    </footer>
+  </body>
+</html>

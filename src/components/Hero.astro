@@ -1,0 +1,132 @@
+---
+import { icons } from "../utils/icons";
+--- 
+<div class="-mt-[20px] bg-white">
+  <section class="pt-2 pb-16 px-6 text-center md:text-left md:px-20 flex flex-col md:flex-row items-center justify-between">
+</div>
+<section class="bg-white pt-2 pb-16 px-6 text-center md:text-left md:px-20 flex flex-col md:flex-row items-center justify-between">
+  <div class="max-w-xl">
+    <h1 class="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
+      Tu <span class="text-sky-500">aliado confiable</span> en la atención médica digital.
+    </h1>
+
+    <p class="text-gray-600 mt-4 text-base md:text-lg">
+      Con <strong>HealthUnity</strong>, agenda tus citas médicas fácil, rápido y sin llamadas. 
+      Conecta con doctores certificados y administra tus consultas desde una sola app, disponible las 24 horas del día.
+    </p>
+
+
+    
+    <!-- 🔵 Botón principal destacado -->
+    <div class="mt-8 flex justify-center md:justify-start">
+      <a href="#reserva" class="inline-flex items-center gap-2 bg-sky-500 text-white font-semibold py-3 px-8 rounded-full shadow-md hover:bg-sky-600 transition-all">
+        Reservar una cita
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+          <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 
+          4.365-9.75 9.75s4.365 9.75 9.75 
+          9.75 9.75-4.365 9.75-9.75S17.385 
+          2.25 12 2.25zm4.28 10.28a.75.75 
+          0 000-1.06l-3-3a.75.75 0 
+          10-1.06 1.06l1.72 1.72H8.25a.75.75 
+          0 000 1.5h5.69l-1.72 1.72a.75.75 
+          0 101.06 1.06l3-3z" clip-rule="evenodd"/>
+        </svg>
+      </a>
+    </div>  
+
+    <!-- 🏢 Texto de confianza + logos -->
+<div class="mt-6">
+  <p class="text-gray-500 text-sm md:text-base mb-4">
+    Con la confianza de millones en todo el mundo:
+  </p>
+
+  <div class="flex items-center justify-center md:justify-start gap-6 opacity-80">
+<img src={icons.amazon.src} alt="Amazon" class="h-12 w-12 text-gray-600" /> 
+<img src={icons.apple.src} alt="Apple" class="h-12 w-12 text-gray-600" />
+<img src={icons.google.src} alt="Google" class="h-12 w-12 text-gray-600" />
+<img src={icons.notion.src} alt="Notion" class="h-12 w-12 text-gray-600" />
+<img src={icons.spotify.src} alt="Spotify" class="h-12 w-12 text-gray-600" />
+<img src={icons.slack.src} alt="Slack" class="h-12 w-12 text-gray-600" />
+  </div>
+</div>
+  </div>
+
+<!-- Sección principal con fondo -->
+<div class="relative  p-6 md:p-10 overflow-hidden">
+
+  <!-- Etiqueta lateral (con icono) -->
+  <div class="absolute top-96 left-0 bg-white/90 text-sky-600 font-bold  p-2 px-4 rounded-lg shadow z-20 flex items-center gap-2">
+    <!-- Estrellita decorativa -->
+     <div class="bg-cyan-100 rounded-md p-1 shadow">
+        <svg class="h-5 w-5 text-sky-500 " viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.968 0 1.371 1.24.588 1.81l-2.801 2.036a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.801-2.036a1 1 0 00-1.176 0l-2.801 2.036c-.785.57-1.84-.197-1.54-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.88 8.72c-.783-.57-.38-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z"/>
+    </svg> 
+     </div>
+ 
+    <span>Reserva de cita fácil</span>
+  </div>
+
+  <!-- Imagen principal del doctor (al fondo) -->
+  <div class="flex justify-center relative z-0">
+    <img src="docP.png" alt="Doctor sonriendo" class="w-full max-w-sm md:max-w-md" />
+  </div>
+
+  <!-- Tarjeta flotante de review s (encima) -->
+  <div class="absolute bg-white/90  top-60 border-2 border-blue-100 shadow-xl right-6 bg-white shadow-xl rounded-2xl p-2 flex flex-col items-center gap-1 w-[220px] h-[100px] z-20">
+    <!-- Íconos de pacientes solapados -->
+    <div class="flex -space-x-3 ">
+      <img src="grup1.png" alt="Paciente feliz 1" class="h-8 w-8 rounded-full border-2 border-white" />
+      <img src="grup2.png" alt="Paciente feliz 2" class="h-8 w-8 rounded-full border-2 border-white" />
+      <img src="grup3.png" alt="Paciente feliz 3" class="h-8 w-8 rounded-full border-2 border-white" />
+      <img src="grup4.png" alt="Paciente feliz 4" class="h-8 w-8 rounded-full border-2 border-white" />
+    </div>
+
+    <!-- Texto de pacientes felices -->
+    <p class="text-sm text-gray-700 text-center">
+      <span class="font-bold text-sky-500">2400+</span> Pacientes felices
+    </p>
+
+    <!-- Calificación de estrellas en español con media estrella -->
+    <div class="flex items-center ">
+      <!-- 4 estrellas llenas -->
+      <svg class="h-4 w-4 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.968 0 1.371 1.24.588 1.81l-2.801 2.036a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.801-2.036a1 1 0 00-1.176 0l-2.801 2.036c-.785.57-1.84-.197-1.54-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.88 8.72c-.783-.57-.38-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z"/>
+      </svg>
+      <svg class="h-4 w-4 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.968 0 1.371 1.24.588 1.81l-2.801 2.036a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.801-2.036a1 1 0 00-1.176 0l-2.801 2.036c-.785.57-1.84-.197-1.54-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.88 8.72c-.783-.57-.38-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z"/></svg>
+      <svg class="h-4 w-4 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.968 0 1.371 1.24.588 1.81l-2.801 2.036a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.801-2.036a1 1 0 00-1.176 0l-2.801 2.036c-.785.57-1.84-.197-1.54-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.88 8.72c-.783-.57-.38-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z"/></svg>
+      <svg class="h-4 w-4 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.968 0 1.371 1.24.588 1.81l-2.801 2.036a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.801-2.036a1 1 0 00-1.176 0l-2.801 2.036c-.785.57-1.84-.197-1.54-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.88 8.72c-.783-.57-.38-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z"/></svg>
+      <!-- Media estrella -->
+      <svg class="h-4 w-4 text-yellow-400" viewBox="0 0 20 20" aria-hidden="true">
+        <defs>
+          <clipPath id="half">
+            <rect x="0" y="0" width="10" height="20"></rect>
+          </clipPath>
+        </defs>
+        <!-- borde de estrella -->
+        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.968 0 1.371 1.24.588 1.81l-2.801 2.036a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.801-2.036a1 1 0 00-1.176 0l-2.801 2.036c-.785.57-1.84-.197-1.54-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.88 8.72c-.783-.57-.38-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z"
+              stroke="currentColor" fill="none" stroke-width="1"></path>
+        <!-- relleno mitad izquierda -->
+        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.968 0 1.371 1.24.588 1.81l-2.801 2.036a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.801-2.036a1 1 0 00-1.176 0l-2.801 2.036c-.785.57-1.84-.197-1.54-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.88 8.72c-.783-.57-.38-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z"
+              fill="currentColor" clip-path="url(#half)"></path>
+      </svg>
+
+      <span class="text-gray-600 text-sm ml-2">(4.7 estrellas)</span>
+    </div>
+  </div>
+
+  <!-- Tarjeta inferior con comillas -->
+<div class="absolute w-[250px] h-[80px] bottom-0 left-[68%] -translate-x-1/2 bg-white/90 rounded-xl border border-blue-200 ring-1 ring-sky-100 shadow-md shadow-sky-900/10 px-0 py-2 w-[320px] h-[100px] text-center z-20">
+  <div class="relative">
+    <svg class="absolute -top-3 -left-3 h-5 w-5 text-sky-400 opacity-70" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M7.17 6A4.17 4.17 0 003 10.17V21h6v-8H7.17A4.17 4.17 0 007.17 6zm10 0A4.17 4.17 0 0013 10.17V21h6v-8h-1.83A4.17 4.17 0 0017.17 6z"/>
+    </svg>
+    <p class="text-sm text-gray-700 px-4">
+      “El dolor mismo es importante, yo estoy en la línea, perteneciente a la élite de la educación.”
+    </p>
+  </div>
+</div>
+</div>
+</section>
+
+
+  </section>

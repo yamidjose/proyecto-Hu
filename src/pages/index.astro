@@ -1,16 +1,114 @@
 ---
-
+/* 
+  IMPORTACIÓN DE COMPONENTES PRINCIPALES
+  --------------------------------------
+  Aquí traemos cada sección que construiste dentro de src/components/
+  Esto permite que tu landing sea modular, escalable y fácil de mantener.
+*/
+import Navbar from "../components/Navbar.astro";
+import Hero from "../components/Hero.astro";
+import Services from "../components/Services.astro";
+import HowItWorks from "../components/HowItWorks.astro";
+import Testimonials from "../components/Testimonials.astro";
+import Doctors from "../components/Doctors.astro";
+import Contact from "../components/Contact.astro";
+import Footer from "../components/Footer.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+<!-- 
+  ESTRUCTURA HTML BASE DE LA LANDING PAGE DE HEALTHUNITY
+  -------------------------------------------------------
+  Astro genera este archivo como una página completa (ruta /).
+  Aquí se renderizan los componentes en orden para formar la landing final.
+-->
+
+<html lang="es">
+  <head>
+    <!-- METADATOS BÁSICOS Y SEO -->
+    <!-- Charset y viewport aseguran compatibilidad con navegadores y dispositivos móviles -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- META DESCRIPTION: texto que aparecerá en Google -->
+    <meta 
+      name="description" 
+      content="HealthUnity - Agenda tus citas médicas rápido, fácil y sin llamadas. La app que conecta pacientes y consultorios en toda Colombia." 
+    />
+
+    <!-- TÍTULO DE LA PÁGINA (lo que ves en la pestaña del navegador) -->
+    <title>HealthUnity | Tu salud, más cerca que nunca</title>
+
+    <!-- FAVICON -->
+    <!-- Reemplaza /ruta/favicon.png por tu ícono real -->
+    <link rel="icon" type="image/png" href="/ruta/favicon.png" />
+  </head>
+
+  <!-- 
+    BODY PRINCIPAL
+    --------------
+    Aquí se cargan todas las secciones de la landing.
+    TailwindCSS controla el diseño (colores, espaciados, tipografía, etc.).
+  -->
+  <body class="font-sans text-gray-800 bg-white">
+
+    <!-- 
+      1️⃣ HERO / PORTADA PRINCIPAL
+      ----------------------------
+      - Muestra el mensaje central de la marca.
+      - Contiene el título, subtítulo y botón de descarga.
+      - Es la primera impresión visual del usuario.
+    -->
+      <Navbar />
+    <Hero />
+
+    <!-- 
+      2️⃣ SERVICIOS / BENEFICIOS
+      --------------------------
+      - Explica los beneficios de HealthUnity para pacientes y consultorios.
+      - Utiliza tarjetas con íconos, colores azules y texto breve.
+    -->
+    <Services />
+
+    <!-- 
+      3️⃣ CÓMO FUNCIONA
+      -----------------
+      - Explica el funcionamiento de la app en 3 pasos visuales.
+      - Ideal para captar al usuario móvil y mostrar simplicidad.
+    -->
+    <HowItWorks />
+
+    <!-- 
+      4️⃣ TESTIMONIOS / OPINIONES DE USUARIOS
+      ---------------------------------------
+      - Muestra experiencias reales de pacientes y doctores.
+      - Refuerza la confianza y credibilidad.
+      - Incluye CTA final para descargar la app.
+    -->
+    <Testimonials />
+
+    <!-- 
+      5️⃣ EQUIPO MÉDICO / DOCTORES
+      ----------------------------
+      - Humaniza la marca mostrando médicos aliados.
+      - Muestra rostros, especialidades y pequeñas citas.
+    -->
+    <Doctors />
+
+    <!-- 
+      6️⃣ CONTACTO / SOPORTE
+      ----------------------
+      - Formulario simple para contacto directo o colaboración.
+      - Ideal para que IPS o clínicas interesadas se comuniquen contigo.
+    -->
+    <Contact />
+
+    <!-- 
+      7️⃣ FOOTER / PIE DE PÁGINA
+      --------------------------
+      - Cierra la landing con el logo, enlaces y redes sociales.
+      - Incluye el eslogan principal de la marca.
+      - Mantiene coherencia visual (colores, tipografía, espaciado).
+    -->
+    <Footer />
+  </body>
 </html>

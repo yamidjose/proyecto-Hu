@@ -1,0 +1,9 @@
+---
+const { name, size = 24, className = "" } = Astro.props;
+---
+
+<!-- Renderiza íconos SVG del sprite global -->
+<svg class={className} width={size} height={size} aria-hidden="true">
+  <use href={`/src/assets/icons.svg#${name}`}></use>
+</svg>
+    
