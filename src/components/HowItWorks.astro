@@ -1,5 +1,9 @@
 ---
+
+import Btn from "./btn.astro";
 --- 
+
+
 <div class="m-[5px] shadow-xl rounded-xl bg-white">
   <section class="pt-8 pb-16 px-6 text-center md:text-left md:px-20 flex flex-col md:flex-row items-center justify-between">
  <section id="como-funciona" class="bg-white py-16 px-6 md:px-20 text-center">
@@ -13,45 +17,69 @@
 
   <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-10">
     <!-- Paso 1 -->
-    <div class="flex flex-col items-center">
-      <div class="bg-sky-100 text-sky-600 w-14 h-14 flex items-center justify-center rounded-full text-xl font-bold mb-4">
-        1
-      </div>
-      <img src="/ruta/icono-buscar.png" alt="Buscar médico" class="h-12 mb-4" />
-      <h3 class="text-lg font-semibold text-gray-900 mb-2">Busca tu médico o especialidad</h3>
-      <p class="text-gray-600 text-sm max-w-xs">
-        Encuentra al profesional adecuado según tu necesidad médica y ubicación.
-      </p>
+<div class="relative flex flex-col items-center text-center p-6">
+  <!-- Contenedor triangular -->
+  <div class="w-full max-w-xs bg-white shadow-md hover:shadow-lg transition-all p-6 flex flex-col items-center text-center clip-triangle">
+    <!-- Número -->
+    <div class="bg-sky-100 text-sky-600 w-14 h-14 flex items-center justify-center rounded-full text-xl font-bold mb-4">
+      1
     </div>
+    <!-- Imagen -->
+    <img src="busc-med.png" alt="Buscar médico" class="h-24 mb-4" />
+    <!-- Título -->
+    <h3 class="text-lg font-semibold text-gray-900 mb-2">Busca tu médico o especialidad</h3>
+    <!-- Texto -->
+    <p class="text-gray-600 text-sm">
+      Encuentra al profesional adecuado según tu necesidad médica y ubicación.
+    </p>
+  </div>
+</div>
 
     <!-- Paso 2 -->
-    <div class="flex flex-col items-center">
-      <div class="bg-sky-100 text-sky-600 w-14 h-14 flex items-center justify-center rounded-full text-xl font-bold mb-4">
-        2
-      </div>
-      <img src="/ruta/icono-agendar.png" alt="Agendar cita" class="h-12 mb-4" />
-      <h3 class="text-lg font-semibold text-gray-900 mb-2">Agenda tu cita</h3>
-      <p class="text-gray-600 text-sm max-w-xs">
-        Elige la fecha y hora que más te convengan. Nuestro sistema está disponible 24/7.
-      </p>
+<div class="relative flex flex-col items-center text-center p-4 ">
+  <!-- Contenedor triangular -->
+  <div class="w-full max-w-xs bg-white shadow-md hover:shadow-lg transition-all p-10 flex flex-col items-center text-center clip-triangle overflow-hidden">
+    <!-- Número -->
+    <div class="bg-sky-100 rounded-full text-sky-600 w-14 h-14 flex items-center justify-center  text-xl font-bold mb-4">
+      2
     </div>
+    <!-- Imagen -->
+    <img src="agend-ejemplo.png" alt="Agendar cita" class="h-24 mb-4" />
+    <!-- Título -->
+    <h3 class="text-lg font-semibold text-gray-900 mb-2">Agenda tu cita</h3>
+    <!-- Texto -->
+    <p class="text-gray-600 text-sm max-w-xs">
+      Elige la fecha y hora que más te convengan. Nuestro sistema está disponible 24/7.
+    </p>
+  </div>
+</div>
 
     <!-- Paso 3 -->
-    <div class="flex flex-col items-center">
-      <div class="bg-sky-100 text-sky-600 w-14 h-14 flex items-center justify-center rounded-full text-xl font-bold mb-4">
-        3
-      </div>
-      <img src="/ruta/icono-chat.png" alt="Asistente virtual" class="h-12 mb-4" />
-      <h3 class="text-lg font-semibold text-gray-900 mb-2">Confirma con nuestro asistente</h3>
-      <p class="text-gray-600 text-sm max-w-xs">
-        El asistente virtual entiende lo que necesitas y agenda tu cita automáticamente, sin llamadas ni esperas.
-      </p>
+<div class="relative flex flex-col items-center text-center p-2">
+  <!-- Contenedor triangular -->
+  <div class="w-full max-w-xs bg-white shadow-md hover:shadow-lg transition-all p-6 flex flex-col items-center text-center clip-triangle overflow-hidden">
+    <!-- Número -->
+    <div class="bg-sky-100 text-sky-600 w-14 h-14 flex items-center justify-center rounded-full text-xl font-bold mb-4">
+      3
     </div>
+    <!-- Imagen -->
+    <img src="asist-virt.png" alt="Asistente virtual" class="h-28 mb-4" />
+    <!-- Título -->
+    <h3 class="text-lg font-semibold text-gray-900 mb-2">Confirma con nuestro asistente</h3>
+    <!-- Texto -->
+    <p class="text-gray-600 text-sm max-w-xs">
+      El asistente virtual entiende lo que necesitas y agenda tu cita automáticamente, sin llamadas ni esperas.
+    </p>
+  </div>
+</div>
   </div>
 
-  <div class="mt-16">
-    <img src="/ruta/mockup-app.png" alt="Vista previa de la app HealthUnity" class="mx-auto w-full max-w-sm md:max-w-md rounded-2xl shadow-lg" />
-  </div>
+  <div class="mt-16 flex justify-center md:justify-center  ">
+<Btn
+  label="Ir a Probar HealthUnity"
+  href="#"
+  class="hidden md:block"
+/>
 </section>
 
   </section>

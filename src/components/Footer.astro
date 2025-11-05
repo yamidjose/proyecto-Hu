@@ -1,42 +1,65 @@
----
---- 
-
-<footer class="bg-white border-t border-gray-200 py-10 px-6 md:px-20 text-center md:text-left">
-  <div class="flex flex-col md:flex-row items-center justify-between gap-8">
-    <!-- Logo y frase -->
-    <div>
-      <img src="logo.png" alt="HealthUnity logo" class="h-40 mx-auto md:mx-0 mb-3" />
-      <p class="text-gray-600 text-sm max-w-sm">
-        <span class="font-semibold text-sky-500">HealthUnity</span> une pacientes y profesionales de la salud a través de la tecnología.  
-        Porque cuidar tu salud nunca fue tan fácil.
-      </p>
-    </div>
-
-    <!-- Navegación rápida -->
-    <div class="flex flex-col sm:flex-row gap-4 text-gray-600 text-sm font-medium">
-      <a href="#servicios" class="hover:text-sky-500 transition-colors">Servicios</a>
-      <a href="#como-funciona" class="hover:text-sky-500 transition-colors">Cómo funciona</a>
-      <a href="#testimonios" class="hover:text-sky-500 transition-colors">Testimonios</a>
-      <a href="#contacto" class="hover:text-sky-500 transition-colors">Contacto</a>
-    </div>
-
-    <!-- Redes sociales -->
-    <div class="flex items-center justify-center space-x-4">
-      <a href="#" class="text-gray-500 hover:text-sky-500 transition-colors">
-        <img src="/ruta/icono-facebook.svg" alt="Facebook" class="h-5 w-5" />
-      </a>
-      <a href="#" class="text-gray-500 hover:text-sky-500 transition-colors">
-        <img src="/ruta/icono-instagram.svg" alt="Instagram" class="h-5 w-5" />
-      </a>
-      <a href="#" class="text-gray-500 hover:text-sky-500 transition-colors">
-        <img src="/ruta/icono-linkedin.svg" alt="LinkedIn" class="h-5 w-5" />
-      </a>
-    </div>
+<footer class="bg-white border-t border-gray-200 text-gray-700">
+  <div class="max-w-7xl mx-auto px-6 md:px-10 py-12">
+    <div class="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-10">
+      <!-- Marca -->
+      <div class="flex-1 max-w-xs">
+          <div class="relative flex-none w-48 h-28 overflow-visible">
+    <img src="logo.png" alt="Healthunity" class="absolute left-0 top-0 h-32 w-auto object-contain"/>
   </div>
 
-  <!-- Línea inferior -->
-  <div class="mt-10 border-t border-gray-200 pt-6 text-gray-500 text-sm text-center">
-    <p>© 2025 HealthUnity. Todos los derechos reservados.</p>
-    <p class="mt-2 italic text-sky-500">Tu salud, más cerca que nunca.</p>
+        <p class="mt-4 text-sm text-gray-600"> <span class="font-semibold text-sky-600">HealthUnity</span> — Experience personalized medical care from the comfort of your home.</p>
+
+        <div class="mt-6 flex items-center space-x-3">
+          <!-- Usa SVG inline aquí -->
+          <a href="#" aria-label="Facebook" class="text-gray-500 hover:text-sky-500 focus:outline-none focus:ring-2 focus:ring-sky-300 rounded">
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">...</svg>
+          </a>
+          <!-- repetidos para otros iconos -->
+        </div>
+      </div>
+
+      <!-- Grid de links -->
+      <div class="flex-1 w-full">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+          <div>
+            <h3 class="text-sm font-semibold text-gray-900">Support</h3>
+            <ul class="mt-4 space-y-3 text-sm text-gray-600">
+              <li><a href="#" class="hover:text-sky-500 transition-colors">Getting Started</a></li>
+              <li><a href="#" class="hover:text-sky-500 transition-colors">FAQS</a></li>
+              <li><a href="#" class="hover:text-sky-500 transition-colors">Help Articles</a></li>
+              <li><a href="#" class="hover:text-sky-500 transition-colors">Report an issue</a></li>
+              <li><a href="#" class="hover:text-sky-500 transition-colors">Contact Help Desk</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-sm font-semibold text-gray-900">Services</h3>
+            <ul class="mt-4 space-y-3 text-sm text-gray-600">
+              <li><a href="#" class="hover:text-sky-500 transition-colors">Booking appointments</a></li>
+              <li><a href="#" class="hover:text-sky-500 transition-colors">Online consultations</a></li>
+              <li><a href="#" class="hover:text-sky-500 transition-colors">Prescriptions</a></li>
+              <li><a href="#" class="hover:text-sky-500 transition-colors">Medicine Refills</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-sm font-semibold text-gray-900">Legal</h3>
+            <ul class="mt-4 space-y-3 text-sm text-gray-600">
+              <li><a href="#" class="hover:text-sky-500 transition-colors">Terms & Conditions</a></li>
+              <li><a href="#" class="hover:text-sky-500 transition-colors">Privacy Policy</a></li>
+              <li><a href="#" class="hover:text-sky-500 transition-colors">Cookie Notice</a></li>
+              <li><a href="#" class="hover:text-sky-500 transition-colors">Cookie Preferences</a></li>
+              <li><a href="#" class="hover:text-sky-500 transition-colors">Trust Center</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom -->
+    <div class="mt-10 pt-6 border-t border-gray-200 flex flex-col-reverse md:flex-row items-center md:items-end justify-between gap-4">
+      <p class="text-sm text-gray-500">HealNet ©2024 All Rights Reserved.</p>
+      <p class="text-sm italic text-sky-600 md:text-right">Experience personalized medical care from the comfort of your home</p>
+    </div>
   </div>
 </footer>

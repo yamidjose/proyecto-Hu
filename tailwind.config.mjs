@@ -8,3 +8,14 @@ export default {
   },
   plugins: [], // Puedes agregar plugins de Tailwind más adelante
 };
+
+module.exports = {
+  theme: {
+    extend: {
+      spacing: {
+        'icon': '80px',
+      },
+    },
+  },
+  plugins: [],
+}
