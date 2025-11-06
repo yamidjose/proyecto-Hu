@@ -1,0 +1,31 @@
+---
+---
+
+<div id="solo-mobile-warning"
+  class="hidden fixed inset-0 bg-gradient-to-br from-gray-900 to-black text-white flex flex-col items-center justify-center z-[9999] p-6 text-center">
+  <h1 class="text-3xl font-bold mb-3">🚫 No disponible en escritorio</h1>
+  <p class="text-lg text-gray-300">
+    Esta página solo está disponible para dispositivos móviles.  
+    Por favor, ábrela desde tu celular 📱.
+  </p>
+</div>
+
+<script>
+  const isMobile = /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i.test(navigator.userAgent);
+  const warning = document.getElementById('solo-mobile-warning');
+
+  if (!isMobile && warning) {
+    alert("🚫 Esta página solo está disponible para dispositivos móviles. Ábrela desde tu celular 📱");
+
+    // 👇 Redirige al inicio de Google
+    window.location.href = "https://www.google.com";
+
+    warning.classList.remove('hidden');
+    document.querySelectorAll(':not(#solo-mobile-warning)').forEach((el) => {
+      if (el instanceof HTMLElement) {
+        el.style.display = 'none';
+      }
+    });
+  }
+</script>
+
