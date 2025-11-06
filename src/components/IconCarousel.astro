@@ -1,0 +1,39 @@
+---
+const { icons } = Astro.props;
+---
+
+<style>
+  /* Animación de desplazamiento continuo */
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  .scrolling-wrapper {
+    display: flex;
+    width: max-content;
+    animation: scroll 20s linear infinite;
+  }
+
+  .carousel-mask {
+    overflow: hidden;
+    mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+  }
+</style>
+
+<div class="carousel-mask w-full">
+  <div class="scrolling-wrapper gap-10 items-center">
+    <!-- Doble lista para efecto infinito -->
+    {Array(2).fill(0).map(() => (
+      <div class="flex gap-10 items-center">
+        <img src={icons.amazon.src} alt="Amazon" class="h-10 w-10 opacity-70 hover:opacity-100 transition" />
+        <img src={icons.apple.src} alt="Apple" class="h-10 w-10 opacity-70 hover:opacity-100 transition" />
+        <img src={icons.google.src} alt="Google" class="h-10 w-10 opacity-70 hover:opacity-100 transition" />
+        <img src={icons.notion.src} alt="Notion" class="h-10 w-10 opacity-70 hover:opacity-100 transition" />
+        <img src={icons.spotify.src} alt="Spotify" class="h-10 w-10 opacity-70 hover:opacity-100 transition" />
+        <img src={icons.slack.src} alt="Slack" class="h-10 w-10 opacity-70 hover:opacity-100 transition" />
+      </div>
+    ))}
+  </div>
+</div>
